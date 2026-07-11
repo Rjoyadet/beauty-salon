@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joy's Salon | Hair & Beauty</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo">Joy</a>
+            <ul class="nav-links">
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#booking">Book Now</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+        <section class="hero">
+            <div class="hero-bg">
+                <!-- Replace with your hero image -->
+                <div class="hero-image-placeholder" role="img" aria-label="Salon interior"></div>
+            </div>
+            <div class="hero-content">
+                <p class="hero-tagline">Expert care done for you</p>
+                <h1>Joy's Salon</h1>
+                <p class="hero-sub">Hair, color & beauty in cozy Pilot Point</p>
+                <a href="#booking" class="btn btn-primary">Book an appointment</a>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <!-- Gallery - places for pictures -->
+        <section id="gallery" class="section gallery-section">
+            <h2 class="section-title">Our Work</h2>
+            <p class="section-subtitle">Recent looks we’re proud of</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder" data-slot="1">
+                        <span>Your photo</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder" data-slot="2">
+                        <span>Your photo</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder" data-slot="3">
+                        <span>Your photo</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder" data-slot="4">
+                        <span>Your photo</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder" data-slot="5">
+                        <span>Your photo</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder" data-slot="6">
+                        <span>Your photo</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section id="services" class="section services-section">
+            <h2 class="section-title">Services</h2>
+            <p class="section-subtitle">Treatments tailored to you</p>
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-image-placeholder">
+                        <span>Cut & style</span>
+                    </div>
+                    <h3>Cut & Style</h3>
+                    <p>Precision cuts and styling for every hair type and face shape.</p>
+                </article>
+                <article class="service-card">
+                    <div class="service-image-placeholder">
+                        <span>Color</span>
+                    </div>
+                    <h3>Color & Highlights</h3>
+                    <p>Full color, balayage, foils, and color correction.</p>
+                </article>
+                <article class="service-card">
+                    <div class="service-image-placeholder">
+                        <span>Treatments</span>
+                    </div>
+                    <h3>Treatments</h3>
+                    <p>Keratine, deep conditioning, and scalp treatments.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Team / salon photos -->
+        <section id="team" class="section team-section">
+            <h2 class="section-title">Our Team</h2>
+            <p class="section-subtitle">Meet the people behind your look</p>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-photo-placeholder">
+                        <span>Team photo</span>
+                    </div>
+                    <h3>Stylist name</h3>
+                    <p>Role / specialty</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-photo-placeholder">
+                        <span>Team photo</span>
+                    </div>
+                    <h3>Stylist name</h3>
+                    <p>Role / specialty</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-photo-placeholder">
+                        <span>Team photo</span>
+                    </div>
+                    <h3>Stylist name</h3>
+                    <p>Role / specialty</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking calendar -->
+        <section id="booking" class="section booking-section">
+            <h2 class="section-title">Book Your Visit</h2>
+            <p class="section-subtitle">Choose a date and time below. Green slots are available; gray slots are taken.</p>
+
+            <div class="calendar-controls">
+                <button type="button" class="btn btn-ghost" id="prevWeek" aria-label="Previous week">← Previous week</button>
+                <span class="calendar-range" id="calendarRange"></span>
+                <button type="button" class="btn btn-ghost" id="nextWeek" aria-label="Next week">Next week →</button>
+            </div>
+
+            <div class="calendar-wrapper">
+                <div class="calendar-grid" id="calendarGrid">
+                    <!-- Filled by script -->
+                </div>
+            </div>
+
+            <p class="calendar-legend">
+                <span class="legend-available"><span class="legend-dot"></span> Available</span>
+                <span class="legend-taken"><span class="legend-dot"></span> Taken</span>
+            </p>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section contact-section">
+            <h2 class="section-title">Visit Us</h2>
+            <div class="contact-grid">
+                <div class="contact-placeholder contact-map">
+                    <span>Map or location photo</span>
+                </div>
+                <div class="contact-info">
+                    <p><strong>Address</strong><br>123 Style Street, Suite 100<br>Pilot Point, Tx 76258</p>
+                    <p><strong>Hours</strong><br>Mon–Fri 9:00 AM – 7:00 PM</p>
+                    <p><strong>Phone</strong><br><a href="tel:+4692613609">(469) 261-3609</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© Joy's Salon. Replace image placeholders with your own photos.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
